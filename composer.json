@@ -1,6 +1,6 @@
 {
     "name": "billythekid/rating",
-    "description": "Ratings system",
+    "description": "Ratings system for Craft CMS",
     "type": "craft-plugin",
     "version": "1.0.0",
     "keywords": [
