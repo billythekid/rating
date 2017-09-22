@@ -1,0 +1,25 @@
+{#
+/**
+ * Rating plugin for Craft CMS 3.x
+ *
+ * Rating Settings.twig
+ *
+ * @author    Billy Fagan
+ * @copyright Copyright (c) 2017 Billy Fagan
+ * @link      https://billyfagan.co.uk
+ * @package   Rating
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("billythekid\\rating\\assetbundles\\rating\\RatingAsset") %}
+
+{{ forms.textField({
+    label: 'Some Field',
+    instructions: 'Enter some setting here.',
+    id: 'someAttribute',
+    name: 'someAttribute',
+    value: settings['someAttribute']})
+}}

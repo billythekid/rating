@@ -1,0 +1,19 @@
+{#
+/**
+ * Rating plugin for Craft CMS
+ *
+ * RatingWidget Widget Body
+ *
+ * @author    Billy Fagan
+ * @copyright Copyright (c) 2017 Billy Fagan
+ * @link      https://billyfagan.co.uk
+ * @package   Rating
+ * @since     1.0.0
+ */
+#}
+
+{% set iconUrl = view.getAssetManager().getPublishedUrl('@billythekid/rating/assetbundles/ratingwidgetwidget/dist', true) ~ '/img/RatingWidget-icon.svg' %}
+
+<img src="{{ iconUrl }}" height="64" width="64" />
+
+<p>{{ message }}</p>

@@ -1,0 +1,50 @@
+{
+    "name": "billythekid/rating",
+    "description": "Ratings system",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "rating"
+    ],
+    "support": {
+        "docs": "https://github.com/billythekid/rating/blob/master/README.md",
+        "issues": "https://github.com/billythekid/rating/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Billy Fagan",
+            "homepage": "https://billyfagan.co.uk"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "~3.0.0-beta.23"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+          "billythekid\\rating\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Rating",
+        "handle": "rating",
+        "schemaVersion": "1.0.0",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/billythekid/rating/master/CHANGELOG.md",
+        "components": {
+            "ratingService": "billythekid\\rating\\services\\RatingService"
+        },
+        "class": "billythekid\\rating\\Rating"
+    }
+}

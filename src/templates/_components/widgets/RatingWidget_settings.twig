@@ -1,0 +1,25 @@
+{#
+/**
+ * Rating plugin for Craft CMS
+ *
+ * RatingWidget Widget Settings
+ *
+ * @author    Billy Fagan
+ * @copyright Copyright (c) 2017 Billy Fagan
+ * @link      https://billyfagan.co.uk
+ * @package   Rating
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("billythekid\\rating\\assetbundles\\rating\\RatingAsset") %}
+
+{{ forms.textField({
+    label: 'Message',
+    instructions: 'Enter a message here.',
+    id: 'message',
+    name: 'message',
+    value: widget['message']})
+}}
